@@ -1,0 +1,21 @@
+.button {
+  background-color: #ff0000;
+  width: 320px;
+  padding: 20px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+/* inline styles issue related with media queries and pseudo classes is
+   solve using css modules 👇 */
+@media (max-width: 992px) {
+  .button {
+    background-color: green;
+  }
+}
+
+.button:hover {
+  color: violet;
+  background-color: blue;
+}
